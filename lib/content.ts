@@ -6,14 +6,18 @@ export const siteContent = {
     { platform: "LinkedIn", url: "https://www.linkedin.com/in/paulyacoubian/", handle: "paulyacoubian" }
   ],
   sections: {
-    myEssays: [
-      { title: "Transit Revolution", url: "#", description: "Transforming urban transportation" },
-      { title: "Back of the Envelope", url: "#", description: "Quick calculations for big decisions" },
-      { title: "Think Bigger", url: "#", description: "Expanding mental models and ambition" },
-      { title: "High School Future", url: "#", description: "Reimagining education for the next generation" },
-      { title: "Tech Hubs", url: "#", description: "Geographic centers of innovation" },
-      { title: "Classical Liberalism Defense", url: "#", description: "Case for individual liberty and free markets" }
-    ],
+    myEssays: {
+      published: [],
+      upcoming: [
+        { title: "Fort Knox OpSec", url: "#", description: "Notes on security of American gold" },
+        { title: "Transit Revolution", url: "#", description: "Transforming urban transportation" },
+        { title: "Back of the Envelope", url: "#", description: "Quick calculations for big decisions" },
+        { title: "Think Bigger", url: "#", description: "Expanding mental models and ambition" },
+        { title: "High School Future", url: "#", description: "Reimagining education for the next generation" },
+        { title: "Tech Hubs", url: "#", description: "Geographic centers of innovation" },
+        { title: "Classical Liberalism Defense", url: "#", description: "Case for individual liberty and free markets" }
+      ]
+    },
     builds: [
       { title: "Copy.ai", url: "#", description: "AI-powered copywriting platform" },
       { title: "New Project Alpha", url: "#", description: "Exploring new venture opportunities" }
@@ -27,12 +31,15 @@ export const siteContent = {
       { name: "Paul Tudor Jones", company: "Tudor Investment Corporation, Robin Hood Foundation", url: "#" },
       { name: "Charlie Munger", company: "Berkshire Hathaway", url: "#" }
     ],
-    essays: [
-      { title: "Warren Buffett's Letters", url: "https://www.berkshirehathaway.com/letters/letters.html", description: "Berkshire Hathaway shareholder letters" },
-      { title: "Paul Graham's Essays", url: "http://www.paulgraham.com/articles.html", description: "Essays on startups, technology, and life" },
-      { title: "Charles Bukowski Archive", url: "https://bukowskiforum.com/database/", description: "Complete collection of Bukowski's works" },
-      { title: "Elad Gil's Blog", url: "http://blog.eladgil.com/", description: "Insights on startups and scaling companies" }
-    ],
+    essays: {
+      published: [
+        { title: "Warren Buffett's Letters", url: "https://www.berkshirehathaway.com/letters/letters.html", description: "Berkshire Hathaway shareholder letters" },
+        { title: "Paul Graham's Essays", url: "http://www.paulgraham.com/articles.html", description: "Essays on startups, technology, and life" },
+        { title: "Charles Bukowski Archive", url: "https://bukowskiforum.com/database/", description: "Complete collection of Bukowski's works" },
+        { title: "Elad Gil's Blog", url: "http://blog.eladgil.com/", description: "Insights on startups and scaling companies" }
+      ],
+      upcoming: []
+    },
     books: [
       {
         title: "Zero to One",
