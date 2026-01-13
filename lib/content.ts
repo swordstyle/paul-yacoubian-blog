@@ -87,6 +87,18 @@ export const siteContent = {
         author: "Jessica Livingston",
         url: "https://www.amazon.com/Founders-Work-Stories-Startups-Early/dp/1430210788",
         learning: "Stories from startup founders in their own words"
+      },
+      {
+        title: "Entrepreneurial Megabucks",
+        author: "A. David Silver",
+        url: "https://www.amazon.com/Entrepreneurial-Megabucks-Greatest-Entrepreneurs-management/dp/0471821845",
+        learning: "How the greatest entrepreneurs built their fortunes"
+      },
+      {
+        title: "Companies Histories",
+        author: "Library Reference Set",
+        url: "#",
+        learning: "Detailed volumes on how major companies were founded"
       }
     ],
     music: [
