@@ -10,6 +10,7 @@ export const siteContent = {
       published: [],
       upcoming: [
         { title: "Fort Knox OpSec", url: "#", description: "Notes on security of American gold" },
+        { title: "Bitcoin is Not Technology", url: "#", description: "Analysis of Bitcoin's true nature and purpose" },
         { title: "Transit Revolution", url: "#", description: "Transforming urban transportation" },
         { title: "Back of the Envelope", url: "#", description: "Quick calculations for big decisions" },
         { title: "Think Bigger", url: "#", description: "Expanding mental models and ambition" },
