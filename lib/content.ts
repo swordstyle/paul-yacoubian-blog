@@ -8,8 +8,7 @@ export const siteContent = {
   sections: {
     builds: [
       { title: "Copy.ai", url: "#", description: "AI-powered copywriting platform" },
-      { title: "New Project Alpha", url: "#", description: "Exploring new venture opportunities" },
-      { title: "Creative Tools", url: "#", description: "Building tools for creative workflows" }
+      { title: "New Project Alpha", url: "#", description: "Exploring new venture opportunities" }
     ],
     founders: [
       { name: "Elon Musk", company: "Tesla, SpaceX, X, OpenAI", url: "#" },
@@ -23,12 +22,13 @@ export const siteContent = {
     essays: [
       { title: "Warren Buffett's Letters", url: "https://www.berkshirehathaway.com/letters/letters.html", description: "Berkshire Hathaway shareholder letters" },
       { title: "Paul Graham's Essays", url: "http://www.paulgraham.com/articles.html", description: "Essays on startups, technology, and life" },
-      { title: "Charles Bukowski Archive", url: "https://bukowskiforum.com/database/", description: "Complete collection of Bukowski's works" }
+      { title: "Charles Bukowski Archive", url: "https://bukowskiforum.com/database/", description: "Complete collection of Bukowski's works" },
+      { title: "Elad Gil's Blog", url: "http://blog.eladgil.com/", description: "Insights on startups and scaling companies" }
     ],
     books: [
       {
         title: "Zero to One",
-        author: "Peter Thiel",
+        author: "Peter Thiel & Blake Masters",
         url: "https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296",
         learning: "Building monopolies and creating new value"
       },
@@ -63,14 +63,14 @@ export const siteContent = {
         learning: "How science and innovation happen in communities"
       },
       {
-        title: "With No Fear of Failure: Recapturing Your Dreams Through Creative Enterprise",
+        title: "With No Fear of Failure",
         author: "Tom Fatjo",
         url: "https://www.amazon.com/No-Fear-Failure-Recapturing-Enterprise/dp/0975276808",
-        learning: "Recapturing dreams through creative enterprise"
+        learning: "A CPA quits his job to become a garbage man"
       },
       {
         title: "The Diversity Myth",
-        author: "David O. Sacks",
+        author: "David O. Sacks & Peter Thiel",
         url: "https://www.amazon.com/Diversity-Myth-Multiculturalism-Political-Conformity/dp/0945999763",
         learning: "Critical examination of diversity policies in higher education"
       }
@@ -79,8 +79,8 @@ export const siteContent = {
       { title: "Red Hot Chili Peppers", url: "#", description: "Fun power and energy" },
       { title: "The Prodigy", url: "#", description: "Pure power and intensity" },
       { title: "Chemical Brothers", url: "#", description: "Sensory force fields" },
-      { title: "Three 6 Mafia", url: "#", description: "Power of a group" },
-      { title: "Wu-Tang Clan", url: "#", description: "Power of a group" },
+      { title: "Three 6 Mafia", url: "#", description: "Unstoppable force as a group" },
+      { title: "Wu-Tang Clan", url: "#", description: "Unstoppable force as a group" },
       { title: "Glorilla", url: "#", description: "Attitude" },
       { title: "Beastie Boys", url: "#", description: "Attitude" },
       { title: "Pitbull", url: "#", description: "Fun dance vibes" },
@@ -108,24 +108,24 @@ export const siteContent = {
       { title: "Flow Club", url: "#", description: "Virtual coworking platform" },
       { title: "Softr", url: "#", description: "No-code app builder" },
       { title: "Replicate.com (acquired)", url: "#", description: "AI model hosting platform" },
-      { title: "Tome", url: "#", description: "AI-powered storytelling" },
+      { title: "Lightfield", url: "#", description: "AI Native CRM" },
       { title: "Tunelark", url: "#", description: "Music discovery platform" },
       { title: "Mainstreet (acquired)", url: "#", description: "Tax credit automation" },
-      { title: "RMFG.com", url: "#", description: "Manufacturing platform" },
+      { title: "RMFG.com", url: "#", description: "Custom Metal On-Demand" },
       { title: "Dukaan", url: "#", description: "E-commerce platform for India" },
       { title: "Living Carbon", url: "#", description: "Enhanced reforestation" },
       { title: "Mercury Bank", url: "#", description: "Banking for startups" },
       { title: "Rippling", url: "#", description: "HR and IT management platform" },
       { title: "Scale.ai (acquired)", url: "#", description: "Data platform for AI" },
-      { title: "Lucky Robots", url: "#", description: "Marketing automation" },
+      { title: "Lucky Robots", url: "#", description: "AI Simulations for Robots" },
       { title: "Airplane (acquired)", url: "#", description: "Developer workflow platform" },
-      { title: "Lume Health (acquired)", url: "#", description: "Healthcare platform" },
-      { title: "Jam.dev", url: "#", description: "Bug reporting platform" },
+      { title: "Lume Health (acquired)", url: "#", description: "Nurse staffing platform" },
+      { title: "Jam.dev", url: "#", description: "AI bug resolution platform" },
       { title: "Dub", url: "#", description: "Link management platform" },
       { title: "Wiselayer (acquired)", url: "#", description: "Security platform" },
-      { title: "Colorfull", url: "#", description: "Design platform" },
-      { title: "Nitrility", url: "#", description: "Infrastructure platform" },
-      { title: "Zania", url: "#", description: "AI platform" }
+      { title: "Colorfull", url: "#", description: "Healthy Food Delivered at Work" },
+      { title: "Kled", url: "#", description: "Large datasets for AI models" },
+      { title: "Zania", url: "#", description: "Autonomous Compliance Automation" }
     ]
   }
 }
