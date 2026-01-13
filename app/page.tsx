@@ -12,7 +12,8 @@ export default function Home() {
   ]
 
   const externalPages = [
-    { href: '/mental-models', title: 'Mental Models' }
+    { href: '/mental-models', title: 'Mental Models' },
+    { href: '/podcasts', title: 'Podcasts' }
   ]
 
   return (

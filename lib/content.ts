@@ -36,7 +36,9 @@ export const siteContent = {
       { name: "Fred Smith", company: "FedEx", url: "#" },
       { name: "Paul Graham", company: "Y Combinator, Viaweb", url: "#" },
       { name: "Paul Tudor Jones", company: "Tudor Investment Corporation, Robin Hood Foundation", url: "#" },
-      { name: "Charlie Munger", company: "Berkshire Hathaway", url: "#" }
+      { name: "Charlie Munger", company: "Berkshire Hathaway", url: "#" },
+      { name: "Palmer Luckey", company: "Oculus, Anduril", url: "#" },
+      { name: "Joe Lonsdale", company: "Palantir, 8VC, University of Austin", url: "#" }
     ],
     essays: {
       published: [
