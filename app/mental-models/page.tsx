@@ -54,10 +54,20 @@ const mentalModels: MentalModel[] = [
   { rank: 36, name: "Symmetry", description: "Patterns of balance and proportion reveal underlying structure", primaryDiscipline: "Geometry", altDisciplines: ["Mathematics", "Physics", "Biology"] },
   { rank: 37, name: "Scale", description: "Size fundamentally changes behavior and properties", primaryDiscipline: "Geometry", altDisciplines: ["Physics", "Biology", "Systems"] },
   { rank: 38, name: "Proximity", description: "Things closer together have stronger influence on each other", primaryDiscipline: "Geometry", altDisciplines: ["Psychology", "Systems", "Physics"] },
-  { rank: 39, name: "Fractals", description: "Self-similar patterns that repeat at different scales", primaryDiscipline: "Geometry", altDisciplines: ["Mathematics", "Biology", "Systems"] },
-  { rank: 40, name: "Golden Ratio", description: "The most aesthetically pleasing proportion in nature", primaryDiscipline: "Geometry", altDisciplines: ["Mathematics", "Biology", "Art"] }
+  { rank: 39, name: "Modularity", description: "Complex systems built from simpler, reusable components", primaryDiscipline: "Systems", altDisciplines: ["Engineering", "Biology", "Mathematics"], derivatives: ["Assembly Theory", "Fractals", "Network Architecture"] },
+  { rank: 40, name: "Golden Ratio", description: "The most aesthetically pleasing proportion in nature", primaryDiscipline: "Geometry", altDisciplines: ["Mathematics", "Biology", "Art"] },
 
-  // Continue to 100... (showing first 40 for now)
+  // Adding 10 more to complete Top 50
+  { rank: 41, name: "Threshold Effects", description: "Small changes create dramatic shifts once a threshold is crossed", primaryDiscipline: "Systems", altDisciplines: ["Physics", "Psychology", "Economics"] },
+  { rank: 42, name: "Base Rate Neglect", description: "We ignore prior probability when making judgments", primaryDiscipline: "Statistics", altDisciplines: ["Psychology", "Logic"] },
+  { rank: 43, name: "Availability Heuristic", description: "We judge probability by how easily examples come to mind", primaryDiscipline: "Psychology", altDisciplines: ["Statistics", "Economics"] },
+  { rank: 44, name: "Hindsight Bias", description: "Past events seem more predictable than they were", primaryDiscipline: "Psychology", altDisciplines: ["Logic", "Statistics"] },
+  { rank: 45, name: "Selection Bias", description: "Non-random data selection leads to false conclusions", primaryDiscipline: "Statistics", altDisciplines: ["Psychology", "Logic"] },
+  { rank: 46, name: "Symbiosis", description: "Mutually beneficial relationships between different entities", primaryDiscipline: "Biology", altDisciplines: ["Economics", "Systems", "Sociology"] },
+  { rank: 47, name: "Competition", description: "Limited resources create competitive dynamics", primaryDiscipline: "Biology", altDisciplines: ["Economics", "Game Theory", "Psychology"] },
+  { rank: 48, name: "Cooperation", description: "Working together produces outcomes impossible individually", primaryDiscipline: "Game Theory", altDisciplines: ["Biology", "Economics", "Psychology"] },
+  { rank: 49, name: "Network Effects", description: "Value increases exponentially with each additional user", primaryDiscipline: "Economics", altDisciplines: ["Systems", "Technology", "Sociology"] },
+  { rank: 50, name: "Path Dependence", description: "Historical sequences matter; past decisions constrain future options", primaryDiscipline: "Systems", altDisciplines: ["Economics", "History", "Psychology"] }
 ]
 
 export default function MentalModels() {
@@ -75,7 +85,7 @@ export default function MentalModels() {
             </Link>
           </div>
           <h1 className="text-4xl font-normal text-black mb-4">
-            Mental Models: Top 100
+            Mental Models: Top 50
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             The most important mental models ranked by importance.
@@ -95,7 +105,7 @@ export default function MentalModels() {
                 <th className="text-left py-3 px-4 font-medium text-gray-900 w-48">Mental Model</th>
                 <th className="text-left py-3 px-4 font-medium text-gray-900">Description</th>
                 <th className="text-left py-3 px-4 font-medium text-gray-900 w-32">Primary</th>
-                <th className="text-left py-3 px-4 font-medium text-gray-900 w-48">Alt Disciplines</th>
+                <th className="text-left py-3 px-4 font-medium text-gray-900 w-48">Secondary</th>
                 <th className="text-left py-3 px-4 font-medium text-gray-900 w-48">Derivatives</th>
               </tr>
             </thead>
