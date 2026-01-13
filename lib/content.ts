@@ -1,3 +1,9 @@
+interface Essay {
+  title: string
+  url: string
+  description: string
+}
+
 export const siteContent = {
   name: "Paul Yacoubian",
   bio: "Built Copy.ai. Now building new projects. Connoisseur of business models. Learning to code, creative explosions, tweeting.",
@@ -39,7 +45,7 @@ export const siteContent = {
         { title: "Charles Bukowski Archive", url: "https://bukowskiforum.com/database/", description: "Complete collection of Bukowski's works" },
         { title: "Elad Gil's Blog", url: "http://blog.eladgil.com/", description: "Insights on startups and scaling companies" }
       ],
-      upcoming: []
+      upcoming: [] as Essay[]
     },
     books: [
       {
