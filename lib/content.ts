@@ -6,6 +6,14 @@ export const siteContent = {
     { platform: "LinkedIn", url: "https://www.linkedin.com/in/paulyacoubian/", handle: "paulyacoubian" }
   ],
   sections: {
+    myEssays: [
+      { title: "Transit Revolution", url: "#", description: "Transforming urban transportation" },
+      { title: "Back of the Envelope", url: "#", description: "Quick calculations for big decisions" },
+      { title: "Think Bigger", url: "#", description: "Expanding mental models and ambition" },
+      { title: "High School Future", url: "#", description: "Reimagining education for the next generation" },
+      { title: "Tech Hubs", url: "#", description: "Geographic centers of innovation" },
+      { title: "Classical Liberalism Defense", url: "#", description: "Case for individual liberty and free markets" }
+    ],
     builds: [
       { title: "Copy.ai", url: "#", description: "AI-powered copywriting platform" },
       { title: "New Project Alpha", url: "#", description: "Exploring new venture opportunities" }
@@ -73,6 +81,12 @@ export const siteContent = {
         author: "David O. Sacks & Peter Thiel",
         url: "https://www.amazon.com/Diversity-Myth-Multiculturalism-Political-Conformity/dp/0945999763",
         learning: "Critical examination of diversity policies in higher education"
+      },
+      {
+        title: "Founders at Work",
+        author: "Jessica Livingston",
+        url: "https://www.amazon.com/Founders-Work-Stories-Startups-Early/dp/1430210788",
+        learning: "Stories from startup founders in their own words"
       }
     ],
     music: [
@@ -109,7 +123,7 @@ export const siteContent = {
       { title: "Softr", url: "#", description: "No-code app builder" },
       { title: "Replicate.com (acquired)", url: "#", description: "AI model hosting platform" },
       { title: "Lightfield", url: "#", description: "AI Native CRM" },
-      { title: "Tunelark", url: "#", description: "Music discovery platform" },
+      { title: "Tunelark", url: "#", description: "Music Lessons Platform" },
       { title: "Mainstreet (acquired)", url: "#", description: "Tax credit automation" },
       { title: "RMFG.com", url: "#", description: "Custom Metal On-Demand" },
       { title: "Dukaan", url: "#", description: "E-commerce platform for India" },

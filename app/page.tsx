@@ -3,6 +3,7 @@ import { siteContent } from '@/lib/content'
 export default function Home() {
   const sections = [
     { id: 'builds', title: 'Builds' },
+    { id: 'myessays', title: 'My Essays' },
     { id: 'founders', title: 'Hall of Fame Founders' },
     { id: 'essays', title: 'Favorite Essays' },
     { id: 'books', title: 'Favorite Books' },
@@ -109,6 +110,24 @@ export default function Home() {
                 <h2 className="text-2xl font-normal text-black mb-6">Builds</h2>
                 <ul className="space-y-4">
                   {siteContent.sections.builds.map((item, index) => (
+                    <li key={index}>
+                      <a
+                        href={item.url}
+                        className="block text-gray-900 hover:text-blue-600 transition-colors"
+                      >
+                        <div className="font-medium">{item.title}</div>
+                        <div className="text-gray-600 text-sm mt-1">{item.description}</div>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+
+              {/* My Essays */}
+              <section id="myessays">
+                <h2 className="text-2xl font-normal text-black mb-6">My Essays</h2>
+                <ul className="space-y-4">
+                  {siteContent.sections.myEssays.map((item, index) => (
                     <li key={index}>
                       <a
                         href={item.url}
