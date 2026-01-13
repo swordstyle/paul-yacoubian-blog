@@ -7,7 +7,7 @@ interface Podcast {
   podcastName: string
   episodeTitle: string
   date: string
-  duration: string
+  duration?: string
   topics: string[]
   description?: string
   sortDate: number // For sorting purposes

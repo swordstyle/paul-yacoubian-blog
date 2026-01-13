@@ -15,6 +15,8 @@ export const siteContent = {
     myEssays: {
       published: [],
       upcoming: [
+        { title: "Building in Public Playbook", url: "#", description: "Step-by-step guide on how Copy.ai grew its audience and community" },
+        { title: "Recommended Twitter Follows", url: "#", description: "Curated list of people worth following in AI and startups" },
         { title: "Fort Knox OpSec", url: "#", description: "Notes on security of American gold" },
         { title: "Bitcoin is Not Technology", url: "#", description: "Non-Girardian Technologies Create Value" },
         { title: "Transit Revolution", url: "#", description: "Transforming urban transportation" },
