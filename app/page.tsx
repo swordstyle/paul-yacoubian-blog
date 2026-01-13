@@ -11,6 +11,10 @@ export default function Home() {
     { id: 'investments', title: 'Angel Investments' }
   ]
 
+  const externalPages = [
+    { href: '/mental-models', title: 'Mental Models' }
+  ]
+
   return (
     <main className="bg-white min-h-screen">
       <div className="lg:flex">
@@ -25,6 +29,15 @@ export default function Home() {
                 className="inline-block text-xs bg-white text-gray-600 hover:text-blue-600 transition-colors py-1.5 px-3 rounded-md border border-gray-200"
               >
                 {section.title}
+              </a>
+            ))}
+            {externalPages.map((page) => (
+              <a
+                key={page.href}
+                href={page.href}
+                className="inline-block text-xs bg-blue-50 text-blue-700 hover:text-blue-900 transition-colors py-1.5 px-3 rounded-md border border-blue-200"
+              >
+                {page.title}
               </a>
             ))}
           </div>
@@ -46,6 +59,22 @@ export default function Home() {
                 </li>
               ))}
             </ul>
+
+            <div className="mt-8 pt-4 border-t border-gray-200">
+              <h4 className="font-medium text-gray-900 mb-3 text-sm">Pages</h4>
+              <ul className="space-y-2">
+                {externalPages.map((page) => (
+                  <li key={page.href}>
+                    <a
+                      href={page.href}
+                      className="block text-sm text-blue-700 hover:text-blue-900 transition-colors py-1"
+                    >
+                      {page.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </nav>
 
