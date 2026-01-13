@@ -17,6 +17,7 @@ export const siteContent = {
       upcoming: [
         { title: "Building in Public Playbook", url: "#", description: "Step-by-step guide on how Copy.ai grew its audience and community" },
         { title: "Recommended Twitter Follows", url: "#", description: "Curated list of people worth following in AI and startups" },
+        { title: "Why the best stories are written on typewriters", url: "#", description: "The power of intentional writing and thinking before typing" },
         { title: "Fort Knox OpSec", url: "#", description: "Notes on security of American gold" },
         { title: "Bitcoin is Not Technology", url: "#", description: "Non-Girardian Technologies Create Value" },
         { title: "Transit Revolution", url: "#", description: "Transforming urban transportation" },
@@ -28,7 +29,7 @@ export const siteContent = {
       ]
     },
     builds: [
-      { title: "Copy.ai", url: "#", description: "AI-powered copywriting platform" },
+      { title: "Copy.ai", url: "https://copy.ai", description: "AI-powered copywriting platform (2020-2025). Raised $28m from Craft Ventures, Wing Ventures, Sequoia Capital, Elad Gil. Acquired by FullCast. Scaled to 17m users and customers like Microsoft, JP Morgan, ServiceNow, Workday, Siemens (enterprise). CoFounder CEO. Cofounded with my bestie Chris Lu." },
       { title: "New Project Alpha", url: "#", description: "Exploring new venture opportunities" }
     ],
     founders: [

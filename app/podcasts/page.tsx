@@ -12,6 +12,7 @@ interface Podcast {
   description?: string
   sortDate: number // For sorting purposes
   youtubeUrl?: string // YouTube video URL
+  transcriptUrl?: string // Transcript file URL
 }
 
 const podcasts: Podcast[] = [
@@ -22,7 +23,8 @@ const podcasts: Podcast[] = [
     date: "Apr 2023",
     topics: ["GPT Evolution", "AI Impact", "Demo"],
     sortDate: 202304,
-    youtubeUrl: "https://www.youtube.com/watch?v=le1Ne4uXEU0"
+    youtubeUrl: "https://www.youtube.com/watch?v=le1Ne4uXEU0",
+    transcriptUrl: "/transcripts/This_Week_in_Startups.md"
   },
   {
     id: 2,
@@ -32,7 +34,8 @@ const podcasts: Podcast[] = [
     duration: "1h 4m",
     topics: ["Entrepreneurship", "LLMs", "Scaling"],
     sortDate: 202410,
-    youtubeUrl: "https://www.youtube.com/watch?v=pBzIyF9avL0"
+    youtubeUrl: "https://www.youtube.com/watch?v=pBzIyF9avL0",
+    transcriptUrl: "/transcripts/Riding_Unicorns.md"
   },
   {
     id: 4,
@@ -102,7 +105,8 @@ const podcasts: Podcast[] = [
     duration: "~1h",
     topics: ["AI Startup", "MVPs", "Hiring"],
     sortDate: 202302,
-    youtubeUrl: "https://www.youtube.com/watch?v=sPdNd3bExTo"
+    youtubeUrl: "https://www.youtube.com/watch?v=sPdNd3bExTo",
+    transcriptUrl: "/transcripts/Liam_Ottley.md"
   },
   {
     id: 13,
@@ -111,7 +115,8 @@ const podcasts: Podcast[] = [
     date: "Sep 2023",
     topics: ["Startup Ideas", "Enterprise AI", "Product Scale"],
     sortDate: 202309,
-    youtubeUrl: "https://www.youtube.com/watch?v=VJIhnVjcx-M"
+    youtubeUrl: "https://www.youtube.com/watch?v=VJIhnVjcx-M",
+    transcriptUrl: "/transcripts/Jam.dev.md"
   },
   {
     id: 14,
@@ -120,7 +125,8 @@ const podcasts: Podcast[] = [
     date: "Oct 2022",
     topics: ["AI Business", "Next Generation", "Copy.ai"],
     sortDate: 202210,
-    youtubeUrl: "https://www.youtube.com/watch?v=_ATXZZgdrqw"
+    youtubeUrl: "https://www.youtube.com/watch?v=_ATXZZgdrqw",
+    transcriptUrl: "/transcripts/SwagUp.md"
   },
   {
     id: 15,
@@ -129,7 +135,8 @@ const podcasts: Podcast[] = [
     date: "Jan 2024",
     topics: ["AI Writing", "Future of AI", "Copywriting"],
     sortDate: 202401,
-    youtubeUrl: "https://www.youtube.com/watch?v=qEKRuej2DnU"
+    youtubeUrl: "https://www.youtube.com/watch?v=qEKRuej2DnU",
+    transcriptUrl: "/transcripts/Kopywriting_Kourse_(2024).md"
   },
   {
     id: 16,
@@ -138,7 +145,8 @@ const podcasts: Podcast[] = [
     date: "Feb 2021",
     topics: ["GPT-3", "Copy.ai", "AI Writing"],
     sortDate: 202102,
-    youtubeUrl: "https://www.youtube.com/watch?v=tmaH0nzQrbk"
+    youtubeUrl: "https://www.youtube.com/watch?v=tmaH0nzQrbk",
+    transcriptUrl: "/transcripts/Kopywriting_Kourse_(2021).md"
   },
   {
     id: 17,
@@ -147,7 +155,8 @@ const podcasts: Podcast[] = [
     date: "Aug 2025",
     topics: ["GTM Strategy", "AI Workflows", "Enterprise Marketing"],
     sortDate: 202508,
-    youtubeUrl: "https://www.youtube.com/watch?v=82NsqcfdkoE"
+    youtubeUrl: "https://www.youtube.com/watch?v=82NsqcfdkoE",
+    transcriptUrl: "/transcripts/Marketing_&_Media_Alliance.md"
   },
   {
     id: 18,
@@ -156,7 +165,8 @@ const podcasts: Podcast[] = [
     date: "Nov 2023",
     topics: ["AI MVPs", "Product Development", "Intelligence KPI"],
     sortDate: 202311,
-    youtubeUrl: "https://www.youtube.com/watch?v=QFzvJpfJh7w"
+    youtubeUrl: "https://www.youtube.com/watch?v=QFzvJpfJh7w",
+    transcriptUrl: "/transcripts/AI_Ready_Show.md"
   },
   {
     id: 19,
@@ -165,7 +175,8 @@ const podcasts: Podcast[] = [
     date: "Aug 2021",
     topics: ["$60K MRR", "GPT-3", "Twitter PLG"],
     sortDate: 202108,
-    youtubeUrl: "https://www.youtube.com/watch?v=0cMUR03yiec"
+    youtubeUrl: "https://www.youtube.com/watch?v=0cMUR03yiec",
+    transcriptUrl: "/transcripts/Startups_Unedited.md"
   },
   {
     id: 20,
@@ -174,7 +185,8 @@ const podcasts: Podcast[] = [
     date: "Apr 2021",
     topics: ["Building in Public", "Origin Story", "Twitter Community"],
     sortDate: 202104,
-    youtubeUrl: "https://www.youtube.com/watch?v=z_bVMNXL3mo"
+    youtubeUrl: "https://www.youtube.com/watch?v=z_bVMNXL3mo",
+    transcriptUrl: "/transcripts/Build_in_Public_with_KP.md"
   }
 ]
 
@@ -213,7 +225,7 @@ export default function Podcasts() {
           </p>
           <p className="text-sm text-gray-600">
             17 appearances covering everything from GPT-3 early days to scaling AI-native companies.
-            Click podcast names with 🎬 icons to watch directly on YouTube.
+            Click podcast names with 🎬 icons to watch directly on YouTube. Full transcripts available for 11 episodes.
           </p>
         </header>
 
@@ -250,14 +262,39 @@ export default function Podcasts() {
                       >
                         <div className="font-medium text-gray-900 hover:text-blue-600">{podcast.podcastName}</div>
                         <div className="text-gray-600 text-sm mt-1 leading-relaxed">{podcast.episodeTitle}</div>
-                        <div className="text-xs text-blue-600 mt-1">
-                          {podcast.youtubeUrl?.includes('youtube.com') ? '🎬 Watch on YouTube' : '🎧 Listen to Podcast'}
+                        <div className="flex items-center gap-2 text-xs mt-1">
+                          <span className="text-blue-600">
+                            {podcast.youtubeUrl?.includes('youtube.com') ? '🎬 Watch on YouTube' : '🎧 Listen to Podcast'}
+                          </span>
+                          {podcast.transcriptUrl && (
+                            <a
+                              href={podcast.transcriptUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-green-600 hover:text-green-800 transition-colors"
+                              onClick={(e) => e.stopPropagation()}
+                            >
+                              📝 Transcript
+                            </a>
+                          )}
                         </div>
                       </a>
                     ) : (
                       <div>
                         <div className="font-medium text-gray-900">{podcast.podcastName}</div>
                         <div className="text-gray-600 text-sm mt-1 leading-relaxed">{podcast.episodeTitle}</div>
+                        {podcast.transcriptUrl && (
+                          <div className="text-xs mt-1">
+                            <a
+                              href={podcast.transcriptUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-green-600 hover:text-green-800 transition-colors"
+                            >
+                              📝 Transcript
+                            </a>
+                          </div>
+                        )}
                       </div>
                     )}
                   </td>
