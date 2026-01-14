@@ -72,19 +72,20 @@ const mentalModels: MentalModel[] = [
 
 export default function MentalModels() {
   return (
-    <main className="bg-white min-h-screen">
+    <main className="bg-white min-h-screen" role="main">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 lg:py-16">
         {/* Header */}
-        <header className="mb-12">
+        <header className="mb-12" role="banner">
           <div className="mb-6">
             <Link
               href="/"
-              className="text-blue-600 hover:text-blue-800 transition-colors text-sm"
+              className="btn-back"
+              aria-label="Navigate back to home page"
             >
               ← Back to Home
             </Link>
           </div>
-          <h1 className="text-4xl font-normal text-black mb-4">
+          <h1 className="page-title" id="mental-models-heading">
             Mental Models: Top 50
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
@@ -97,16 +98,16 @@ export default function MentalModels() {
         </header>
 
         {/* Mental Models Table */}
-        <div className="overflow-x-auto">
-          <table className="w-full">
+        <div className="table-container" role="region" aria-labelledby="mental-models-heading">
+          <table className="w-full" role="table" aria-label="Top 50 mental models ranked by importance">
             <thead>
-              <tr className="border-b border-gray-200">
-                <th className="text-left py-3 px-2 font-medium text-gray-900 w-16">Rank</th>
-                <th className="text-left py-3 px-4 font-medium text-gray-900 w-48">Mental Model</th>
-                <th className="text-left py-3 px-4 font-medium text-gray-900">Description</th>
-                <th className="text-left py-3 px-4 font-medium text-gray-900 w-32">Primary</th>
-                <th className="text-left py-3 px-4 font-medium text-gray-900 w-48">Secondary</th>
-                <th className="text-left py-3 px-4 font-medium text-gray-900 w-48">Derivatives</th>
+              <tr className="border-b border-gray-200" role="row">
+                <th className="table-header w-16" role="columnheader" scope="col">Rank</th>
+                <th className="table-header w-48" role="columnheader" scope="col">Mental Model</th>
+                <th className="table-header" role="columnheader" scope="col">Description</th>
+                <th className="table-header w-32" role="columnheader" scope="col">Primary</th>
+                <th className="table-header w-48" role="columnheader" scope="col">Secondary</th>
+                <th className="table-header w-48" role="columnheader" scope="col">Derivatives</th>
               </tr>
             </thead>
             <tbody>

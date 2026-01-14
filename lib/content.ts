@@ -30,7 +30,7 @@ export const siteContent = {
     },
     builds: [
       { title: "Copy.ai", url: "https://copy.ai", description: "AI-powered copywriting platform (2020-2025). Raised $28m from Craft Ventures, Wing Ventures, Sequoia Capital, Elad Gil. Acquired by FullCast. Scaled to 17m users and customers like Microsoft, JP Morgan, ServiceNow, Workday, Siemens (enterprise). CoFounder CEO. Cofounded with my bestie Chris Lu." },
-      { title: "New Project Alpha", url: "#", description: "Exploring new venture opportunities" }
+      { title: "Slow Keys", url: "https://slowkeys.com", description: "A typewriter that slows you down so you can think again. Digital minimalism meets intentional writing." }
     ],
     founders: [
       { name: "Elon Musk", company: "Tesla, SpaceX, X, OpenAI", url: "#" },
@@ -170,7 +170,8 @@ export const siteContent = {
       { title: "Wiselayer (acquired)", url: "#", description: "Security platform" },
       { title: "Colorfull", url: "#", description: "Healthy Food Delivered at Work" },
       { title: "Kled", url: "#", description: "Large datasets for AI models" },
-      { title: "Zania", url: "#", description: "Autonomous Compliance Automation" }
+      { title: "Zania", url: "#", description: "Autonomous Compliance Automation" },
+      { title: "NIXR", url: "#", description: "Solving Addiction" }
     ]
   }
 }

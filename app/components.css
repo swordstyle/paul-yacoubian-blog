@@ -1,0 +1,65 @@
+/* Common button and link styles */
+.btn-link {
+  @apply text-blue-600 hover:text-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded;
+}
+
+.btn-link-sm {
+  @apply text-sm text-blue-600 hover:text-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1 rounded;
+}
+
+.btn-back {
+  @apply text-blue-600 hover:text-blue-800 transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1 rounded;
+}
+
+/* Content sections */
+.content-section {
+  @apply space-y-12 sm:space-y-16;
+}
+
+.section-title {
+  @apply text-2xl font-normal text-black mb-6;
+}
+
+.page-title {
+  @apply text-4xl font-normal text-black mb-4;
+}
+
+/* Lists */
+.content-list {
+  @apply space-y-4;
+}
+
+.content-list-item {
+  @apply block text-gray-900 hover:text-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-md p-2 -m-2;
+}
+
+/* Tags and topics */
+.topic-tag {
+  @apply inline-block bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs;
+}
+
+/* Cards */
+.info-card {
+  @apply p-6 bg-gray-50 rounded-lg;
+}
+
+.vision-card {
+  @apply bg-gray-50 border border-gray-200 rounded-lg p-4 sm:p-6 mb-6;
+}
+
+/* Tables */
+.table-container {
+  @apply overflow-x-auto;
+}
+
+.table-header {
+  @apply text-left py-3 px-4 font-medium text-gray-900;
+}
+
+.table-row {
+  @apply border-b border-gray-100 hover:bg-gray-50;
+}
+
+.table-cell {
+  @apply py-4 px-4;
+}
