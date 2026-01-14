@@ -243,7 +243,7 @@ export default function Podcasts() {
               </tr>
             </thead>
             <tbody>
-              {sortedPodcasts.map((podcast, index) => (
+              {sortedPodcasts.map((podcast) => (
                 <tr key={podcast.id} className="table-row" role="row">
                   <td className="table-cell" role="cell">
                     <div>
