@@ -30,6 +30,7 @@ export const siteContent = {
     },
     builds: [
       { title: "Copy.ai", url: "https://copy.ai", description: "AI-powered copywriting platform (2020-2025). Raised $28m from Craft Ventures, Wing Ventures, Sequoia Capital, Elad Gil. Acquired by FullCast. Scaled to 17m users and customers like Microsoft, JP Morgan, ServiceNow, Workday, Siemens (enterprise). CoFounder CEO. Cofounded with my bestie Chris Lu." },
+      { title: "CogFight", url: "https://cogfight.com", description: "Protecting cognitive security through awareness and defense tools. Helping people identify and counter manipulation tactics in digital environments." },
       { title: "Slow Keys", url: "https://slowkeys.com", description: "A typewriter that slows you down so you can think again. Digital minimalism meets intentional writing." }
     ],
     founders: [
