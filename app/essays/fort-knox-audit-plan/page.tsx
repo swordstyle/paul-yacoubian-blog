@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -84,10 +85,17 @@ export default function FortKnoxAuditPlan() {
                 When I asked Claude (an AI assistant) about appropriate staffing levels for securing $557 billion in assets, the recommendation was 200-500 personnel. This represents a significant staffing gap that should be addressed.
               </p>
 
-              {/* Image placeholder */}
-              <div className="my-8 p-4 bg-gray-100 border border-gray-200 rounded-lg">
-                <p className="text-sm text-gray-600 italic">
-                  [Image: Satellite view of Fort Knox parking lot showing approximately 32 parking spaces]
+              <div className="my-8">
+                <Image
+                  src="/images/essays/fort-knox-audit-plan/satellite-parking-analysis.png"
+                  alt="Satellite view of Fort Knox parking lot showing approximately 32 parking spaces for staffing analysis"
+                  width={800}
+                  height={476}
+                  className="rounded-lg shadow-md"
+                  priority
+                />
+                <p className="text-sm text-gray-600 italic text-center mt-2">
+                  Satellite view of Fort Knox parking lot showing approximately 32 parking spaces
                 </p>
               </div>
 
@@ -115,10 +123,16 @@ export default function FortKnoxAuditPlan() {
                 The most challenging aspect of such an operation would be concealing the massive amount of excavated dirt. However, I noticed there's a golf course in the vicinity that could potentially provide cover for earthwork operations under the guise of course maintenance or improvement.
               </p>
 
-              {/* Image placeholder */}
-              <div className="my-8 p-4 bg-gray-100 border border-gray-200 rounded-lg">
-                <p className="text-sm text-gray-600 italic">
-                  [Image: Aerial view showing Fort Knox depository location relative to surrounding areas and potential tunnel routes]
+              <div className="my-8">
+                <Image
+                  src="/images/essays/fort-knox-audit-plan/aerial-tunnel-routes.png"
+                  alt="Aerial view of Fort Knox depository showing surrounding areas and potential tunnel routes for security assessment"
+                  width={800}
+                  height={734}
+                  className="rounded-lg shadow-md"
+                />
+                <p className="text-sm text-gray-600 italic text-center mt-2">
+                  Aerial view showing Fort Knox depository location relative to surrounding areas and potential tunnel routes
                 </p>
               </div>
 
@@ -134,10 +148,16 @@ export default function FortKnoxAuditPlan() {
                 <li>• <strong>Terrain:</strong> The topography offers both defensive advantages and potential concealment for unauthorized activities</li>
               </ul>
 
-              {/* Image placeholder */}
-              <div className="my-8 p-4 bg-gray-100 border border-gray-200 rounded-lg">
-                <p className="text-sm text-gray-600 italic">
-                  [Image: Map showing Fort Knox depository in relation to nearby residential areas and transportation infrastructure]
+              <div className="my-8">
+                <Image
+                  src="/images/essays/fort-knox-audit-plan/location-security-map.png"
+                  alt="Map showing Fort Knox depository in relation to nearby residential areas and transportation infrastructure"
+                  width={800}
+                  height={756}
+                  className="rounded-lg shadow-md"
+                />
+                <p className="text-sm text-gray-600 italic text-center mt-2">
+                  Map showing Fort Knox depository in relation to nearby residential areas and transportation infrastructure
                 </p>
               </div>
             </section>

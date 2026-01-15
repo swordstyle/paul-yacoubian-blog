@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -125,10 +126,48 @@ export default function GonzoClimateWarrior() {
                 The site visit was eye-opening, but not in the way I expected. The landfill operators gave me a tour of their facilities, showing me the gas capture equipment and explaining their process. Everything looked legitimate from a technical standpoint.
               </p>
 
-              {/* Image placeholder */}
-              <div className="my-8 p-4 bg-gray-100 border border-gray-200 rounded-lg">
-                <p className="text-sm text-gray-600 italic">
-                  [Image Gallery: 4 images documenting the landfill gas capture facility tour, showing equipment and operations]
+              <div className="my-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <Image
+                      src="/images/essays/gonzo-climate-warrior/landfill-site-1.jpeg"
+                      alt="Landfill gas capture equipment and facility infrastructure during site visit"
+                      width={600}
+                      height={450}
+                      className="rounded-lg shadow-md"
+                      priority
+                    />
+                  </div>
+                  <div>
+                    <Image
+                      src="/images/essays/gonzo-climate-warrior/landfill-site-2.jpeg"
+                      alt="Gas capture pipes and processing equipment at the landfill facility"
+                      width={600}
+                      height={450}
+                      className="rounded-lg shadow-md"
+                    />
+                  </div>
+                  <div>
+                    <Image
+                      src="/images/essays/gonzo-climate-warrior/landfill-site-3.jpeg"
+                      alt="Methane collection system and operational equipment tour documentation"
+                      width={600}
+                      height={450}
+                      className="rounded-lg shadow-md"
+                    />
+                  </div>
+                  <div>
+                    <Image
+                      src="/images/essays/gonzo-climate-warrior/landfill-site-4.jpeg"
+                      alt="Landfill operations and gas-to-energy conversion facility overview"
+                      width={600}
+                      height={450}
+                      className="rounded-lg shadow-md"
+                    />
+                  </div>
+                </div>
+                <p className="text-sm text-gray-600 italic text-center mt-4">
+                  Documentation from the landfill gas capture facility tour, showing equipment and operations
                 </p>
               </div>
 
