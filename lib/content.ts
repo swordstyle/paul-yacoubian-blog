@@ -145,7 +145,7 @@ export const siteContent = {
       { title: "Microacquire", url: "#", description: "Fastest way to buy and sell apps" },
       { title: "Levels", url: "#", description: "Solving metabolic health" },
       { title: "Tako", url: "#", description: "Maximizing human learning with data visualization" },
-      { title: "Probably", url: "#", description: "AI native data analysis" },
+      { title: "Probably", url: "#", description: "Making data analysis truly AI-native" },
       { title: "Beacons", url: "#", description: "Creator monetization platform" },
       { title: "Offsight", url: "#", description: "Prefab construction workflow management" },
       { title: "Zerion", url: "#", description: "DeFi portfolio tracker" },
