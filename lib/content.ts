@@ -13,12 +13,14 @@ export const siteContent = {
   ],
   sections: {
     myEssays: {
-      published: [],
+      published: [
+        { title: "Fort Knox Audit Plan", url: "/essays/fort-knox-audit-plan", description: "Technical analysis and security assessment of America's gold depository" },
+        { title: "Gonzo Climate Warrior", url: "/essays/gonzo-climate-warrior", description: "My adventure through the belly of the offset beast - a personal journey into carbon offsetting complexities" }
+      ],
       upcoming: [
         { title: "Building in Public Playbook", url: "#", description: "Step-by-step guide on how Copy.ai grew its audience and community" },
         { title: "Recommended Twitter Follows", url: "#", description: "Curated list of people worth following in AI and startups" },
         { title: "Why the best stories are written on typewriters", url: "#", description: "The power of intentional writing and thinking before typing" },
-        { title: "Fort Knox OpSec", url: "#", description: "Notes on security of American gold" },
         { title: "Bitcoin is Not Technology", url: "#", description: "Non-Girardian Technologies Create Value" },
         { title: "Transit Revolution", url: "#", description: "Transforming urban transportation" },
         { title: "Back of the Envelope", url: "#", description: "Quick calculations for big decisions" },
@@ -134,15 +136,15 @@ export const siteContent = {
       { title: "Redman", url: "#", description: "Keeping it real" }
     ],
     investments: [
-      { title: "Circle.co", url: "#", description: "Community platform" },
-      { title: "Nabis", url: "#", description: "Cannabis distribution platform" },
-      { title: "Anduril", url: "#", description: "Defense technology" },
-      { title: "Replit", url: "#", description: "Collaborative coding platform" },
-      { title: "Fortmatic", url: "#", description: "Web3 wallet infrastructure" },
-      { title: "Project Wren", url: "#", description: "Carbon offset platform" },
-      { title: "Microacquire", url: "#", description: "Startup acquisition marketplace" },
-      { title: "Levels", url: "#", description: "Metabolic health tracking" },
-      { title: "Tako", url: "#", description: "Data visualization" },
+      { title: "Circle.co", url: "#", description: "Making things communities want" },
+      { title: "Nabis", url: "#", description: "Helping farmers take cannabis to market" },
+      { title: "Anduril", url: "#", description: "Cheap, effective civilizational defense" },
+      { title: "Replit", url: "#", description: "Helping people code things people want" },
+      { title: "Fortmatic (Magic)", url: "#", description: "Solving the wallet problem completely" },
+      { title: "Project Wren", url: "#", description: "Global pocketbook for climate restoration" },
+      { title: "Microacquire", url: "#", description: "Fastest way to buy and sell apps" },
+      { title: "Levels", url: "#", description: "Solving metabolic health" },
+      { title: "Tako", url: "#", description: "Maximizing human learning with data visualization" },
       { title: "Probably", url: "#", description: "AI native data analysis" },
       { title: "Beacons", url: "#", description: "Creator monetization platform" },
       { title: "Offsight", url: "#", description: "Prefab construction workflow management" },
