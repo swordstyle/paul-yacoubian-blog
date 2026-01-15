@@ -197,7 +197,7 @@ export default function GonzoClimateWarrior() {
                 The majority of the money wasn't going to climate projects - it was going to intermediaries. Even worse, many of these projects would have happened anyway, meaning consumers were paying premium prices for climate impact that didn't actually exist.
               </p>
 
-              <div class="info-card">
+              <div className="info-card">
                 <h5 className="font-semibold text-black mb-2">The Additionality Problem:</h5>
                 <p className="text-gray-700">
                   For carbon offsets to be legitimate, they must represent emissions reductions that wouldn't have occurred otherwise. Projects that are already economically viable don't meet this standard, yet they dominate the offset market.
