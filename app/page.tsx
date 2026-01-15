@@ -134,20 +134,47 @@ export default function Home() {
 
               {/* My Essays */}
               <section id="myessays">
-                <h2 className="text-2xl font-normal text-black mb-6">My Essays - Upcoming</h2>
-                <ul className="space-y-4">
-                  {siteContent.sections.myEssays.upcoming.map((item, index) => (
-                    <li key={index}>
-                      <a
-                        href={item.url}
-                        className="content-list-item"
-                      >
-                        <div className="font-medium">{item.title}</div>
-                        <div className="text-gray-600 text-sm mt-1">{item.description}</div>
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+                <h2 className="text-2xl font-normal text-black mb-6">My Essays</h2>
+
+                {/* Published Essays */}
+                {siteContent.sections.myEssays.published.length > 0 && (
+                  <div className="mb-8">
+                    <h3 className="text-lg font-medium text-gray-900 mb-4">Published</h3>
+                    <ul className="space-y-4">
+                      {siteContent.sections.myEssays.published.map((item, index) => (
+                        <li key={index}>
+                          <a
+                            href={item.url}
+                            className="content-list-item"
+                          >
+                            <div className="font-medium">{item.title}</div>
+                            <div className="text-gray-600 text-sm mt-1">{item.description}</div>
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {/* Upcoming Essays */}
+                {siteContent.sections.myEssays.upcoming.length > 0 && (
+                  <div>
+                    <h3 className="text-lg font-medium text-gray-900 mb-4">Upcoming</h3>
+                    <ul className="space-y-4">
+                      {siteContent.sections.myEssays.upcoming.map((item, index) => (
+                        <li key={index}>
+                          <a
+                            href={item.url}
+                            className="content-list-item"
+                          >
+                            <div className="font-medium">{item.title}</div>
+                            <div className="text-gray-600 text-sm mt-1">{item.description}</div>
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </section>
 
               {/* Hall of Fame Founders */}
