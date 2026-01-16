@@ -364,7 +364,7 @@ export default function FortKnoxAuditPlan() {
 
               <h3 className="text-xl font-medium text-black mt-8 mb-4">Priority 2: Strategic Improvements</h3>
 
-              <ol className="space-y-4 text-gray-700 ml-6" start="4">
+              <ol className="space-y-4 text-gray-700 ml-6" start={4}>
                 <li>
                   <strong>4. Intelligence and Surveillance Network:</strong>
                   <ul className="mt-2 ml-4 space-y-1">
