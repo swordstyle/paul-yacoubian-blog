@@ -14,6 +14,7 @@ export const siteContent = {
   sections: {
     myEssays: {
       published: [
+        { title: "The Math of Urban Transit", url: "/essays/the-math-of-urban-transit", description: "Analysis of Memphis MATA bus system revealing $32 per ride costs and the case for transitioning to robotaxi networks" },
         { title: "Fort Knox Audit Plan", url: "/essays/fort-knox-audit-plan", description: "Technical analysis and security assessment of America's gold depository" },
         { title: "Gonzo Climate Warrior", url: "/essays/gonzo-climate-warrior", description: "My adventure through the belly of the offset beast - a personal journey into carbon offsetting complexities" }
       ],
